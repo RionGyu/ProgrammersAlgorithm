@@ -23,8 +23,6 @@ public class backjun1024 {
                     e=i;
                     min=i-start+1;
                 }
-                //시뮬레이션 돌리다보면 앞의 수를 빼주다가 자기자신(i)가 되면 끝나게 된다.
-                //손으로 써보면 이해된다. i가 자기자신이 될 때가 있다.
                 if(i-start+1==1)break;
             }
 		}
