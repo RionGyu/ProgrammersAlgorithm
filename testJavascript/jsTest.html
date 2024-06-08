@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <title>JS Hello World</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input id="abc1" type="number" value="" />
+        <div>+</div>
+        <input id="abc2" type="number" value="" />
+        <button id="plus" onClick="onClickPlus()">=</button>
+        <output id="abc3"></output>
+    </div>
+
+    <script>
+        function onClickPlus() {
+            const input1 = document.getElementById('abc1').value;
+            const input2 = document.getElementById('abc2').value;
+            const result = parseFloat(input1) + parseFloat(input2);
+            document.getElementById('abc3').value = result;
+            document.getElementById('abc3').innerText = result;
+        }
+    </script>
+</body>
+</html>
